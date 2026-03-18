@@ -1,18 +1,18 @@
 # Customer Churn Prediction
 
-## 📌 Project Overview
+##  Project Overview
 This is a machine learning project where I tried to predict whether a telecom customer will churn or not.
 
 ---
 
-## 📊 Dataset
+## Dataset
 - Total rows: 7043
 - Total columns: 21
 - Target: Churn (Yes/No)
 
 ---
 
-## 🛠️ What I did
+## What I did
 - Data cleaning
 - EDA (data visualization)
 - Feature engineering
@@ -22,7 +22,7 @@ This is a machine learning project where I tried to predict whether a telecom cu
 
 ---
 
-## 🤖 Models Used
+## Models Used
 - Logistic Regression
 - KNN
 - SVM
@@ -32,7 +32,7 @@ This is a machine learning project where I tried to predict whether a telecom cu
 
 ---
 
-## 📈 Model Performance
+## Model Performance
 
 | Model                | Accuracy |
 |---------------------|----------|
@@ -45,29 +45,29 @@ This is a machine learning project where I tried to predict whether a telecom cu
 
 ---
 
-## 🏆 Best Model
+## Best Model
 SVM gave the best performance (~82%) with balanced results.
 
 ---
 
-## 🔍 Key Insights
+## Key Insights
 - Month-to-month contract → high churn
 - High monthly charges → high churn
 - Low tenure → high churn
 
 ---
 
-## 🎯 Conclusion
+## Conclusion
 This project successfully predicts customer churn using multiple ML models.
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 - Hyperparameter tuning
 - Cross validation
 - Model deployment
 
 ---
 
-## 👨‍💻 Author
+## Author
 Hamid Raza
