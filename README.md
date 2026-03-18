@@ -68,6 +68,11 @@ This project successfully predicts customer churn using multiple ML models.
 - Model deployment
 
 ---
+## How to Run
+
+1. Clone the repository
+2. Install dependencies using pip install -r requirements.txt
+3. Run the Jupyter Notebook
 
 ## Author
 Hamid Raza
