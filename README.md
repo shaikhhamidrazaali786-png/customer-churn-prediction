@@ -1,78 +1,147 @@
-# Customer Churn Prediction
+# Customer Churn Prediction using Machine Learning
 
-##  Project Overview
-This is a machine learning project where I tried to predict whether a telecom customer will churn or not.
+Customer churn prediction is an important problem for telecom companies.  
+Losing customers directly affects business revenue, so companies try to identify customers who are likely to leave their service.
 
----
-
-## Dataset
-- Total rows: 7043
-- Total columns: 21
-- Target: Churn (Yes/No)
+In this project, I built a machine learning model to predict whether a telecom customer will churn or not using historical customer data.
 
 ---
 
-## What I did
-- Data cleaning
-- EDA (data visualization)
-- Feature engineering
-- Encoding categorical data
-- Train-test split
-- Feature scaling
+# Project Overview
+
+The goal of this project is to analyze telecom customer data and develop a machine learning model that can predict customer churn.
+
+By identifying customers who are likely to churn, companies can take proactive steps such as offering discounts, improving services, or providing personalized support to retain them.
 
 ---
 
-## Models Used
+# Dataset
+
+The dataset used in this project is the **Telco Customer Churn dataset**.
+
+Dataset information:
+
+- Total records: ~7000 customers
+- Target variable: **Churn (Yes / No)**
+
+Some important features include:
+
+- Tenure (how long the customer has stayed with the company)
+- Monthly Charges
+- Total Charges
+- Contract Type
+- Internet Service
+- Payment Method
+
+---
+
+# Exploratory Data Analysis
+
+Exploratory Data Analysis (EDA) was performed to understand patterns and relationships in the data.
+
+Key analyses included:
+
+- Churn distribution
+- Contract type vs churn
+- Monthly charges vs churn
+- Tenure vs churn
+- Correlation heatmap
+
+These visualizations help identify important factors affecting customer churn.
+
+---
+
+# Data Preprocessing
+
+Before training the models, the following preprocessing steps were applied:
+
+- Removed unnecessary columns such as `customerID`
+- Converted `TotalCharges` to numeric format
+- Handled missing values
+- Encoded categorical variables
+- Applied feature scaling where required
+
+---
+
+# Handling Class Imbalance
+
+Customer churn datasets are often imbalanced.
+
+To address this problem, **SMOTE (Synthetic Minority Over-sampling Technique)** was used to balance the dataset.
+
+This helps the model learn patterns from both churn and non-churn customers.
+
+---
+
+# Machine Learning Models Used
+
+Multiple machine learning models were trained and compared:
+
 - Logistic Regression
-- KNN
-- SVM
 - Decision Tree
 - Random Forest
 - Gradient Boosting
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
+
+Each model was evaluated using standard classification metrics.
 
 ---
 
-## Model Performance
+# Model Evaluation
 
-| Model                | Accuracy |
-|---------------------|----------|
-| Logistic Regression | ~82%     |
-| KNN                 | ~77%     |
-| SVM                 | ~82%     |
-| Decision Tree       | ~80%     |
-| Random Forest       | ~80%     |
-| Gradient Boosting   | ~81%     |
+Models were evaluated using the following metrics:
 
----
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC Score
 
-## Best Model
-SVM gave the best performance (~82%) with balanced results.
+These metrics help measure how well the model predicts customer churn.
 
 ---
 
-## Key Insights
-- Month-to-month contract → high churn
-- High monthly charges → high churn
-- Low tenure → high churn
+# Best Model
+
+After comparing all models, **Logistic Regression performed the best**.
+
+Performance:
+
+Accuracy: ~82%  
+Precision: ~0.68  
+Recall: ~0.60  
+F1 Score: ~0.64  
+ROC-AUC: ~0.75
+
+The model shows a balanced ability to identify churn customers.
 
 ---
 
-## Conclusion
-This project successfully predicts customer churn using multiple ML models.
+# Feature Importance
+
+Some of the key factors influencing customer churn include:
+
+- Contract type
+- Monthly charges
+- Tenure
+- Internet service
+
+Understanding these factors can help businesses design better customer retention strategies.
 
 ---
 
-## Future Improvements
-- Hyperparameter tuning
-- Cross validation
-- Model deployment
+# Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- XGBoost
+- Imbalanced-learn (SMOTE)
 
 ---
-## How to Run
 
-1. Clone the repository
-2. Install dependencies using pip install -r requirements.txt
-3. Run the Jupyter Notebook
-
-## Author
-Hamid Raza
+# Project Structure
